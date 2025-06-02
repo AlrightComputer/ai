@@ -77,5 +77,22 @@ async function fetchResponse(text) {
   audio.play();
 }
 
+const startBtn = document.getElementById("startBtn");
+
+startBtn.onclick = () => {
+  if (
+    openaiInput.value.trim() &&
+    elevenLabsInput.value.trim() &&
+    voiceIdInput.value.trim()
+  ) {
+    startBtn.disabled = true;
+    startBtn.textContent = "Listening...";
+    startListening();
+  } else {
+    alert("Please enter all API keys first.");
+  }
+};
+
 document.getElementById("listenBtn").onclick = () => startListening();
 initRecognizer();
+
