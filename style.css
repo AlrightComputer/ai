@@ -1,36 +1,30 @@
+
 body {
-  margin: 0;
-  font-family: sans-serif;
   background: #111;
   color: #eee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-}
-
-#container {
+  font-family: sans-serif;
   text-align: center;
+  padding: 2rem;
 }
-
-#circle {
+.input-group {
+  margin-bottom: 1rem;
+}
+input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 300px;
+}
+.circle {
+  margin: 2rem auto;
   width: 100px;
   height: 100px;
-  background: black;
-  border: 4px solid white;
   border-radius: 50%;
-  margin: 20px auto;
+  background: #000;
+  border: 2px solid #fff;
   cursor: pointer;
 }
-
-#chatlog {
-  max-width: 600px;
-  padding: 1em;
-  background: #222;
-  border-radius: 10px;
-  font-size: 1rem;
-  overflow-y: auto;
-  max-height: 300px;
-  white-space: pre-line;
+#transcript, #response {
+  margin-top: 1rem;
+  font-size: 1.2rem;
 }
