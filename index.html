@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voice AI Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://js.puter.com/v2/"></script>
+</head>
+<body>
+  <div id="container">
+    <div id="inputs">
+      <input type="text" id="openai-key" placeholder="Enter OpenAI API Key" />
+      <input type="text" id="elevenlabs-key" placeholder="Enter ElevenLabs API Key" />
+      <input type="text" id="voice-id" placeholder="Enter ElevenLabs Voice ID" />
+      <button id="save-btn">Save</button>
+    </div>
+    <div id="circle" title="Tap or say 'Alright computer'"></div>
+    <div id="chatlog"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
